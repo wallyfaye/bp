@@ -1,0 +1,10 @@
+{
+  "name": "bp",
+  "version": "1.0.0",
+  "description": "boilerplate",
+  "main": "index.js",
+  "repository": "https://github.com/wallyfaye/bp",
+  "author": "Wally Faye",
+  "license": "MIT",
+  "private": false
+}
