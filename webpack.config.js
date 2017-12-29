@@ -10,7 +10,7 @@ module.exports = {
 	},
 	output: {
 		filename: '[name].bundle.js',
-		path: path.resolve(__dirname, 'dist')
+		path: path.resolve(__dirname, 'dist/dist')
 	},
 	module: {
 		rules: [
@@ -48,6 +48,6 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			title: 'bp'
 		}),
-		new CleanWebpackPlugin(['dist'])
+		new CleanWebpackPlugin(['dist/dist'])
 	]
 };
