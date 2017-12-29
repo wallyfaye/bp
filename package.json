@@ -1,19 +1,26 @@
 {
   "name": "bp",
   "version": "0.0.1",
-  "description": "boilerplate",
-  "main": "server.js",
-  "repository": "https://github.com/wallyfaye/bp",
-  "author": "Wally Faye",
+  "description": "something to get started quickly",
+  "main": "index.js",
+  "repository": "git@github.com:wallyfaye/bp.git",
+  "author": "wallyfaye <wally.faye@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
   "scripts": {
     "build": "webpack"
-  },
-  "license": "MIT",
-  "private": false,
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-es2017": "^6.24.1",
-    "webpack": "^3.10.0"
   }
 }
