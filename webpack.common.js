@@ -6,14 +6,28 @@ module.exports = {
 	entry: {
 		app: './src/index.js'
 	},
+	output: {
+		filename: '[name].bundle.js',
+		path: path.resolve(__dirname, 'dist')
+	},
 	plugins: [
-		new CleanWebpackPlugin(['dist/dist']),
+		new CleanWebpackPlugin(['dist'], {
+			exclude: ['.gitignore'],
+		}),
 		new HtmlWebpackPlugin({
 			title: 'bp'
 		})
 	],
-	output: {
-		filename: '[name].bundle.js',
-		path: path.resolve(__dirname, 'dist/dist')
+	module: {
+		loaders: [
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				loaders: 'babel-loader',
+				query: {
+					presets: ['react', 'es2015', 'stage-0']
+				}
+			}
+		]
 	}
 }
