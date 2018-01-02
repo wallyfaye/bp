@@ -16,7 +16,11 @@ import { ConnectedRouter, routerReducer, routerMiddleware, push } from 'react-ro
 import Bundle from './Bundle.js'
 import About from 'bundle-loader?lazy!./About'
 
-const history = createHistory()
+import './style.scss';
+
+const history = createHistory({ 
+  basename: (process.env.NODE_ENV === 'production') ? '/tests/dist' : '/'
+})
 const middleware = routerMiddleware(history)
 const store = createStore(
   combineReducers({
@@ -57,7 +61,7 @@ document.body.appendChild(element);
 
 ReactDOM.render(
   <Provider store={store}>
-    <ConnectedRouter history={history}>
+    <ConnectedRouter history={history} >
       <SampleApp />
     </ConnectedRouter>
   </Provider>,
