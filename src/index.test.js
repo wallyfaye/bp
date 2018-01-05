@@ -1,6 +1,7 @@
+import test from './mocha-test'
 import { assert } from 'chai';
 
-export default function do_tests() {
+export default function index() {
   describe('Array', function() {
     describe('#indexOf()', function() {
       it('should return -1 when the value is not present', function() {

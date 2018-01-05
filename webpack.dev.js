@@ -14,7 +14,7 @@ module.exports = merge(common, {
 				]
 			},
 			{
-				test: /test\.js$/,
+				test: /mocha-test\.js$/,
 				use: 'mocha-loader',
 				exclude: /node_modules/,
 			}

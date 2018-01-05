@@ -18,9 +18,7 @@ import About from 'bundle-loader?lazy!./About'
 
 import './style.scss';
 
-import test from './test'
-
-import do_tests from './do_tests.js';
+import index from './index.test.js';
 
 const history = createHistory({ 
   basename: (process.env.NODE_ENV === 'production') ? '/tests/dist' : '/'
@@ -72,4 +70,4 @@ ReactDOM.render(
   document.getElementById('root')
 )
 
-do_tests();
+index();
