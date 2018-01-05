@@ -5,7 +5,7 @@
   "main": "webpack.prod.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
-    "dev": "webpack-dev-server --open --config webpack.dev.js"
+    "dev": "webpack-dev-server --config webpack.dev.js"
   },
   "repository": "git@github.com:wallyfaye/bp.git",
   "author": "wallyfaye <wally.faye@gmail.com>",
@@ -18,10 +18,13 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "bundle-loader": "^0.5.5",
+    "chai": "^4.1.2",
     "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^2.30.1",
+    "mocha": "^4.1.0",
+    "mocha-loader": "^1.1.2",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
